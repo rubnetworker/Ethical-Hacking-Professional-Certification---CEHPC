@@ -9,3 +9,8 @@ Se utilizan herramientas como **Kali Linux, Nmap, Shodan, Sherlock, Metasploit, 
 El propósito es proporcionar recursos de aprendizaje que faciliten la comprensión de las metodologías y técnicas utilizadas por los profesionales de seguridad para identificar, evaluar y documentar riesgos en infraestructuras tecnológicas.
 
 **⚠️ Aviso ético:** Todos los laboratorios tienen fines exclusivamente educativos y deberán ejecutarse en entornos controlados, sistemas propios o infraestructuras que cuenten con autorización explícita. Este repositorio es un recurso de apoyo académico y no constituye material oficial de CertiProf.
+
+
+<img width="149" height="148" alt="Certiprof_Ethical_Hacking_badge" src="https://github.com/user-attachments/assets/054e82ef-1522-40a4-a755-d5c19ad06518" />
+
+<img width="149" height="148" alt="Logo RubNetworke_Proyectos r" src="https://github.com/user-attachments/assets/0b9a78a8-bd32-4f2a-adaf-022aae72ae96" />
