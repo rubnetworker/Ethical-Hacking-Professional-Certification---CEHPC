@@ -42,6 +42,9 @@ Por ejemplo, mediante búsquedas avanzadas es posible identificar:
 
 > **Importante:** La información localizada mediante Google Dorks puede representar un indicio de exposición, pero no confirma por sí misma la existencia de una vulnerabilidad.
 
+<img width="1774" height="887" alt="2 Guía Visual de Google Dorks en Español" src="https://github.com/user-attachments/assets/4b56bf51-b64b-4d61-a68d-7d7aa4172ff7" />
+
+
 ---
 
 ## 2. Objetivos
@@ -157,6 +160,7 @@ La presencia de este parámetro no significa necesariamente que exista una vulne
 ```text
 inurl:index.php?id=
 ```
+<img width="1672" height="941" alt="3 Guía visual para buscar en Google" src="https://github.com/user-attachments/assets/0891e85f-33d0-44ed-9009-2ba1f544c9bc" />
 
 **Paso 3.** Presiona Enter para ejecutar la búsqueda.
 
@@ -173,9 +177,15 @@ inurl:index.php?id=
 
 **Resultado esperado:** Identificar direcciones URL con parámetros y comprender su funcionamiento básico.
 
+<img width="1672" height="941" alt="4 Partes de una URL web" src="https://github.com/user-attachments/assets/1d4c963a-0596-41ee-8f30-1707cf80f8e4" />
+
+
 #### Parte 2. Identificación de errores SQL
 
 En algunas aplicaciones vulnerables, la modificación de un parámetro puede provocar mensajes de error relacionados con SQL o MySQL.
+
+<img width="1672" height="941" alt="5 Infografía de error SQL en navegador" src="https://github.com/user-attachments/assets/b625cf9e-7e76-4ddf-9fd0-792edcc45141" />
+
 
 Una comprobación conocida consiste en agregar una comilla simple (`'`) al final del valor de un parámetro.
 
@@ -255,6 +265,9 @@ Si un administrador publica accidentalmente archivos confidenciales dentro de un
 intitle:"Index of" password.txt
 ```
 
+<img width="1672" height="941" alt="6 Guía visual de búsqueda avanzada en Google" src="https://github.com/user-attachments/assets/98be1ddb-8609-4b35-b968-47997f2fb2de" />
+
+
 **Paso 3.** Presiona Enter.
 
 **Paso 4.** Observa los resultados que aparecen en el buscador.
@@ -287,6 +300,9 @@ El listado muestra diferentes archivos almacenados en un directorio.
 
 Si `password.txt` contuviera credenciales reales y pudiera consultarse sin autorización, existiría un riesgo para la confidencialidad de la información.
 
+<img width="1600" height="900" alt="_7_directorio_indexado" src="https://github.com/user-attachments/assets/419141bb-3136-4737-aa94-68f20c514f21" />
+
+
 **Resultado esperado:** Comprender cómo los motores de búsqueda pueden localizar directorios indexados y por qué la publicación de archivos sensibles representa un riesgo.
 
 **Recomendación de seguridad:** Deshabilitar el listado de directorios cuando no sea necesario, restringir el acceso a archivos sensibles y evitar almacenar contraseñas en texto plano.
@@ -296,6 +312,9 @@ Si `password.txt` contuviera credenciales reales y pudiera consultarse sin autor
 #### Objetivo
 
 Utilizar operadores avanzados para localizar documentos PDF indexados y reconocer posibles riesgos relacionados con la publicación de información.
+
+<img width="1600" height="900" alt="7 busqueda_google_pdf_confidential" src="https://github.com/user-attachments/assets/78db6740-8018-4b4f-9e5a-37d9f09d1ded" />
+
 
 #### Contexto
 
@@ -383,6 +402,9 @@ Google Dorks es una técnica de reconocimiento pasivo que permite localizar info
 Durante esta actividad exploraste tres escenarios: identificación de páginas con parámetros relacionados con SQL Injection, búsqueda de archivos potencialmente expuestos y localización de documentos PDF indexados.
 
 Estas técnicas permiten comprender cómo la información publicada en Internet puede convertirse en un elemento importante durante una evaluación de seguridad.
+
+<img width="1536" height="1024" alt="10 De Google al PDF_ credenciales expuestas" src="https://github.com/user-attachments/assets/53a41212-df3c-4de2-bd0a-7567e4af005e" />
+
 
 Recuerda que **encontrar información no significa haber confirmado una vulnerabilidad**. Un profesional de ethical hacking debe interpretar los resultados correctamente y respetar siempre los límites de autorización establecidos.
 
