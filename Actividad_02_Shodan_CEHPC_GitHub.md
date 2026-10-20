@@ -25,6 +25,9 @@ Entre los dispositivos que pueden encontrarse mediante Shodan destacan:
 
 Shodan fue creado por John Matherly en 2009 y se ha convertido en una herramienta utilizada por investigadores de seguridad, profesionales de TI y especialistas en ciberseguridad.
 
+<img width="1448" height="1086" alt="1 Red global de dispositivos IoT" src="https://github.com/user-attachments/assets/255b996b-8429-4a18-8ac8-ae4fa01667c3" />
+
+
 ### 1.1. ¿Cómo funciona Shodan?
 
 Shodan recopila información mediante procesos automatizados de exploración de servicios disponibles en Internet. Durante este proceso obtiene datos como puertos, protocolos y respuestas enviadas por los sistemas.
@@ -32,6 +35,9 @@ Shodan recopila información mediante procesos automatizados de exploración de 
 Estas respuestas, conocidas como *banners*, pueden contener información sobre el software, su versión y determinadas características del servicio.
 
 Posteriormente, Shodan almacena e indexa los datos recopilados para que los usuarios puedan consultarlos mediante filtros de búsqueda.
+
+<img width="1448" height="1086" alt="2 Flujo de Shodan en cuatro pasos" src="https://github.com/user-attachments/assets/2db9d990-c7f9-4568-9ae0-9e22f23774e0" />
+
 
 Por ejemplo, un administrador de seguridad puede utilizar Shodan para investigar si su organización tiene servicios de administración remota expuestos públicamente.
 
@@ -47,6 +53,9 @@ Por ejemplo, un administrador de seguridad puede utilizar Shodan para investigar
 | IoT | Dispositivos físicos conectados a redes que pueden recopilar o intercambiar información. |
 | Reconocimiento pasivo | Recopilación de información sin interactuar directamente con los sistemas investigados. |
 | Superficie de ataque | Conjunto de puntos potenciales mediante los cuales un sistema podría recibir ataques. |
+
+<img width="1536" height="1024" alt="3 Infografía educativa sobre Shodan y redes" src="https://github.com/user-attachments/assets/f2a92175-0a6c-4dbc-986d-a64ead1690c4" />
+
 
 > [!IMPORTANT]
 > Identificar un dispositivo mediante Shodan no significa que sea vulnerable. Una exposición representa información disponible desde Internet, mientras que una vulnerabilidad requiere un análisis adicional para confirmarse.
@@ -146,6 +155,8 @@ Antes de continuar, comprueba que:
 - [ ] Identificas el cuadro donde se introducen las búsquedas.
 - [ ] Tu cuenta, en caso de ser requerida, permite consultar los resultados necesarios.
 
+<img width="1672" height="941" alt="4 Infografía de la interfaz de Shodan" src="https://github.com/user-attachments/assets/9c66c77a-0d77-4f87-9387-ee616fd05f48" />
+
 > [!NOTE]
 > Algunas funciones de Shodan, incluidos determinados filtros, resultados y capturas, pueden estar sujetas a limitaciones según el tipo de cuenta. Si una función no está disponible, podrás analizar los ejemplos explicados en esta actividad y completar la interpretación técnica correspondiente.
 
@@ -172,6 +183,9 @@ RDP utiliza habitualmente el puerto TCP **3389**.
 Cuando este servicio está expuesto directamente a Internet, puede representar un riesgo si se combina con configuraciones inseguras, credenciales débiles, vulnerabilidades o controles de acceso insuficientes.
 
 No obstante, **tener el puerto 3389 accesible no demuestra que un equipo sea vulnerable**.
+
+<img width="1672" height="941" alt="5 Infografía RDP_ conexión remota segura" src="https://github.com/user-attachments/assets/95eaa0d8-3e83-4ef0-966e-4ec65a2769db" />
+
 
 #### Parte 1. Realización de la búsqueda
 
@@ -253,6 +267,9 @@ Entre los campos más relevantes se encuentran:
 | Información del sistema operativo disponible | |
 | Riesgo potencial identificado | |
 
+<img width="1536" height="1024" alt="6 Infografía Shodan_ resultados RDP en México" src="https://github.com/user-attachments/assets/8cbee848-a840-48cb-9b09-151567bd5538" />
+
+
 #### Parte 5. Identificación del sistema operativo
 
 Un registro de Shodan puede mostrar información relacionada con el sistema operativo del dispositivo, por ejemplo, una referencia a **Windows Server 2008**.
@@ -268,6 +285,8 @@ Este sistema operativo es relevante para una evaluación de seguridad porque las
 #### Resultado esperado
 
 Al finalizar este ejercicio deberás ser capaz de interpretar una consulta de Shodan orientada a RDP, reconocer los filtros utilizados y describir los principales elementos técnicos de un registro.
+
+<img width="1536" height="1024" alt="7 Identificación de sistemas heredados con Shodan" src="https://github.com/user-attachments/assets/89a8d794-d3ee-4044-9a01-ce673ecccdfa" />
 
 #### Recomendaciones de seguridad
 
@@ -299,6 +318,9 @@ Estos dispositivos se utilizan en hogares, oficinas, instalaciones industriales 
 Al igual que otros dispositivos IoT, pueden ofrecer servicios de administración, interfaces web y mecanismos de transmisión de video.
 
 Una configuración incorrecta podría permitir que determinada información técnica o visual quede expuesta a usuarios externos.
+
+<img width="1536" height="1024" alt="8 Dispositivos IoT expuestos en Internet" src="https://github.com/user-attachments/assets/63c6c633-4a01-457a-89d9-3e335a6fefe8" />
+
 
 #### Parte 1. Búsqueda de cámaras web
 
@@ -360,6 +382,9 @@ Entre los posibles riesgos destacan:
 - Uso de configuraciones o credenciales inseguras.
 - Acceso no autorizado a las funciones de administración.
 - Posible utilización de dispositivos comprometidos como puntos de entrada a una red.
+
+<img width="1536" height="1024" alt="9 Riesgos y controles de RDP expuesto" src="https://github.com/user-attachments/assets/d7dd2794-a0be-4438-a95c-711c7624d780" />
+
 
 16. **Paso 16.** Considera el siguiente escenario:
 
@@ -438,6 +463,8 @@ Para demostrar que realizaste las actividades, prepara un documento breve que co
 
 > [!CAUTION]
 > En las capturas que compartas, oculta cualquier dirección IP pública, información privada o identificador sensible de terceros.
+
+<img width="1536" height="1024" alt="10 Flujo de reconocimiento pasivo con Shodan" src="https://github.com/user-attachments/assets/31835ab0-7185-49e9-b2d8-e007cde87a4f" />
 
 ---
 
