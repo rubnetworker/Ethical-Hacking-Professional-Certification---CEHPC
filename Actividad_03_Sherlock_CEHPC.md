@@ -2,12 +2,14 @@
 
 ## Ethical Hacking Professional Certification (CEHPC)
 
-**Duración estimada:** 45 a 60 minutos  
-**Nivel:** Básico  
-**Modalidad:** Presencial o autónoma  
-**Sistema operativo:** Kali Linux  
-**Herramienta principal:** Sherlock  
-**Tema:** Reconocimiento pasivo y recopilación de información mediante OSINT
+| Información | Detalle |
+|---|---|
+| **Duración estimada** | 50–60 minutos |
+| **Nivel** | Básico |
+| **Herramienta** | Shodan |
+| **Herramienta principal:** | Sherlock  |
+| **Tema:** | Reconocimiento pasivo y recopilación de información mediante OSINT |
+
 
 ## 1. Introducción
 
@@ -18,6 +20,9 @@ En el contexto de Ethical Hacking, Sherlock se utiliza principalmente durante la
 Esta técnica forma parte de OSINT (*Open Source Intelligence*), también conocida como inteligencia de fuentes abiertas.
 
 OSINT permite recopilar y analizar información procedente de fuentes públicas, como sitios web, motores de búsqueda, redes sociales, documentos y otras plataformas disponibles en Internet.
+
+<img width="1672" height="941" alt="1 Infografía OSINT_ Fuentes Abiertas en Red" src="https://github.com/user-attachments/assets/cc51161a-3c51-4336-a724-45bccdd52f51" />
+
 
 ### 1.1. Funcionamiento de Sherlock
 
@@ -31,17 +36,16 @@ La herramienta puede devolver resultados con una estructura similar a la siguien
 
 ```text
 [*] Checking username usuario_ejemplo on:
-
 [+] GitHub: https://github.com/usuario_ejemplo
-
 [+] Reddit: https://www.reddit.com/user/usuario_ejemplo
-
 [+] Pinterest: https://www.pinterest.com/usuario_ejemplo
 
 [*] Search completed
-**Nota:** Los resultados anteriores son ilustrativos y no representan una búsqueda real.
-```
 
+```
+<img width="1672" height="941" alt="2 Infografía_ Cómo funciona Sherlock OSINT" src="https://github.com/user-attachments/assets/ef8e6c84-917a-4873-a345-a2c6922734da" />
+
+⚠️ **Nota:** Los resultados anteriores son ilustrativos y no representan una búsqueda real.
 Sherlock busca coincidencias de **nombres de usuario**, no identifica directamente personas. Que dos perfiles compartan el mismo identificador no significa necesariamente que pertenezcan al mismo propietario.
 
 ### 1.2. Importancia de Sherlock en Ethical Hacking
@@ -63,17 +67,11 @@ Esta información puede ser útil para evaluar la postura de seguridad de un ind
 Al finalizar esta actividad, el participante será capaz de:
 
 1.  Identificar la función de Sherlock dentro de una actividad de reconocimiento pasivo.
-
 2.  Preparar el entorno de Kali Linux necesario para ejecutar la herramienta.
-
 3.  Instalar Sherlock utilizando un procedimiento mediante pipx.
-
 4.  Ejecutar búsquedas de nombres de usuario en diferentes plataformas.
-
 5.  Interpretar los resultados obtenidos e identificar posibles coincidencias.
-
 6.  Guardar evidencias de las búsquedas realizadas.
-
 7.  Reconocer las limitaciones de Sherlock y su utilidad dentro de una evaluación de seguridad.
 
 **Resultado esperado:** El participante ejecutará satisfactoriamente Sherlock en Kali Linux, realizará una búsqueda autorizada e identificará las plataformas en las que el nombre de usuario consultado podría encontrarse registrado.
@@ -85,13 +83,9 @@ Sherlock tiene como alcance principal la búsqueda de nombres de usuario en rede
 Durante esta actividad se realizarán las siguientes operaciones:
 
 - Instalación y ejecución de Sherlock en Kali Linux.
-
 - Búsqueda de nombres de usuario propios o expresamente autorizados.
-
 - Identificación de posibles perfiles públicos.
-
 - Revisión e interpretación de los resultados obtenidos.
-
 - Almacenamiento de evidencias de la actividad.
 
 ### 3.1. Consideraciones de seguridad y autorización
@@ -135,13 +129,9 @@ Durante la actividad se utilizará para instalar Sherlock, ejecutar búsquedas y
 Antes de comenzar, verifica que cuentas con:
 
 - Una computadora física o virtual con Kali Linux funcionando.
-
 - Conexión a Internet.
-
 - Una cuenta de usuario en Kali Linux con permisos para instalar paquetes.
-
 - Acceso a una terminal.
-
 - Espacio disponible para instalar las herramientas necesarias.
 
 **Importante:** Si todavía no tienes instalado Kali Linux, deberás preparar el entorno de trabajo antes de comenzar esta actividad.
@@ -153,6 +143,9 @@ En esta sección se realizará la instalación de Sherlock en Kali Linux, utiliz
 Sherlock está desarrollado en Python y puede instalarse mediante pipx, una herramienta que permite instalar aplicaciones Python en entornos aislados, evitando conflictos con las dependencias del sistema operativo.
 
 Durante el procedimiento se preparará el entorno, se instalará Sherlock y se comprobará su funcionamiento antes de comenzar la actividad práctica.
+
+<img width="1672" height="941" alt="3 Infografía_ Instalación de Sherlock en Kali Linux" src="https://github.com/user-attachments/assets/4da9357e-cd83-4711-ad39-5727b89f6fbd" />
+
 
 ### 5.1. Abrir la terminal de Kali Linux
 
@@ -196,23 +189,16 @@ Si existe comunicación y el destino responde a las solicitudes ICMP, aparecerá
 
 ```text
 ┌──(kali㉿kali)-[~]
-
 └─$ ping -c 4 github.com
 
 PING github.com (140.82.114.3) 56(84) bytes of data.
-
 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=1 ttl=53 time=70.2 ms
-
 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=2 ttl=53 time=69.8 ms
-
 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=3 ttl=53 time=69.4 ms
-
 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=4 ttl=53 time=69.6 ms
 
 --- github.com ping statistics ---
-
 4 packets transmitted, 4 received, 0% packet loss, time 3009ms
-
 rtt min/avg/max/mdev = 69.427/69.757/70.234/0.299 ms
 ```
 
@@ -236,7 +222,6 @@ Para garantizar que Kali Linux consulte la información disponible en sus reposi
 
 ```text
 ┌──(kali㉿kali)-[~]
-
 └─$ sudo apt update
 ```
 
@@ -244,9 +229,7 @@ Para garantizar que Kali Linux consulte la información disponible en sus reposi
 
 ```text
 ┌──(kali㉿kali)-[~]
-
 └─$ sudo apt update
-
 [sudo] password for kali:
 ```
 
@@ -266,31 +249,19 @@ Para garantizar que Kali Linux consulte la información disponible en sus reposi
 
 ```text
 ┌──(kali㉿kali)-[~]
-
 └─$ sudo apt update
-
 [sudo] password for kali:
-
 Get:1 http://kali.download/kali kali-rolling InRelease [34.0 kB]
-
 Get:2 http://kali.download/kali kali-rolling/main amd64 Packages [21.6 MB]
-
 Get:3 http://kali.download/kali kali-rolling/main amd64 Contents (deb) [54.0 MB]
-
 Get:4 http://kali.download/kali kali-rolling/contrib amd64 Packages [104 kB]
-
 Get:5 http://kali.download/kali kali-rolling/contrib amd64 Contents (deb) [184 kB]
-
 Get:6 http://kali.download/kali kali-rolling/non-free amd64 Packages [168 kB]
-
 Get:7 http://kali.download/kali kali-rolling/non-free amd64 Contents (deb) [887 kB]
-
 Get:8 http://kali.download/kali kali-rolling/non-free-firmware amd64 Packages [16.3 kB]
-
 Get:9 http://kali.download/kali kali-rolling/non-free-firmware amd64 Contents (deb) [42.5 kB]
 
 Fetched 77.1 MB in 8s (10.2 MB/s)
-
 2254 packages can be upgraded. Run 'apt list --upgradable' to see them.
 ```
 
@@ -309,62 +280,38 @@ sudo apt install pipx -y
 **Explicación del comando:**
 
 - **sudo:** ejecuta la instalación con permisos administrativos.
-
 - **apt install:** instala un paquete desde los repositorios de Kali Linux.
-
 - **pipx:** es la herramienta que utilizaremos para instalar Sherlock.
-
 - **-y:** acepta automáticamente las confirmaciones solicitadas por el administrador de paquetes.
-
 **Paso 2.** Espera hasta que la instalación finalice.
 
 ```text
 ┌──(kali㉿kali)-[~]
-
 └─$ sudo apt install pipx -y
-
 [sudo] password for kali:
 
 The following packages were automatically installed and are no longer required:
-
 ghp-import mkdocs python3-joblib python3-mergedeep python3-pyyaml-env-tag
-
 libjs-bootstrap5 mkdocs-get-deps python3-livereload python3-nltk
-
 libjs-lunr node-popper2 python3-lunr python3-pathspec
-
 Use 'sudo apt autoremove' to remove them.
-
 Upgrading:
-
 pipx
 
 Summary:
-
 Upgrading: 1, Installing: 0, Removing: 0, Not Upgrading: 2253
-
 Download size: 890 kB
-
 Space needed: 818 kB / 62.7 GB available
 
 Get:1 http://kali.darklab.sh/kali kali-rolling/main amd64 pipx all 1.15.0-1 [890 kB]
-
 Fetched 890 kB in 1s (767 kB/s)
-
 (Reading database ... 422160 files and directories currently installed.)
-
 Preparing to unpack .../archives/pipx_1.15.0-1_all.deb ...
-
 Unpacking pipx (1.15.0-1) over (1.8.0-1) ...
-
 Setting up pipx (1.15.0-1) ...
-
 Processing triggers for kali-menu (2025.4.3) ...
-
 Processing triggers for doc-base (0.11.2) ...
-
 Processing 42 changed doc-base files...
-
 Processing triggers for man-db (2.13.1-1) ...
 ```
 
@@ -372,9 +319,7 @@ Processing triggers for man-db (2.13.1-1) ...
 
 ```text
 ┌──(kali㉿kali)-[~]
-
 └─$ pipx --version
-
 1.15.0
 ```
 
@@ -388,15 +333,12 @@ Para que los comandos de las aplicaciones instaladas mediante pipx puedan ejecut
 
 ```text
 ┌──(kali㉿kali)-[~]
-
 └─$ pipx ensurepath
-
 /home/kali/.local/bin is already in PATH.
 
 ⚠️ All pipx binary directories have been appended to PATH. If you are sure you want to proceed,
 
 try again with the '--force' flag.
-
 Otherwise pipx is ready to go! ✨ 🌟 ✨
 ```
 
@@ -416,9 +358,7 @@ Una vez preparado el entorno, instalaremos Sherlock utilizando el paquete oficia
 
 ```text
 ┌──(kali㉿kali)-[~]
-
 └─$ pipx install sherlock-project
-
 Installing Sherlock-project
 ```
 
@@ -436,15 +376,10 @@ Durante esta operación, pipx descargará el paquete y sus dependencias necesari
 
 ```text
 ┌──(kali㉿kali)-[~]
-
 └─$ pipx install sherlock-project
-
 installed package sherlock-project 0.16.2, installed using Python 3.13.9
-
 These apps are now available
-
 - sherlock
-
 done! ✨ 🌟 ✨
 ```
 
@@ -458,21 +393,14 @@ pipx list
 
 ```text
 ┌──(kali㉿kali)-[~]
-
 └─$ pipx list
-
 venvs are in /home/kali/.local/share/pipx/venvs
-
 apps are exposed on your $PATH at /home/kali/.local/bin
-
 manual pages are exposed at /home/kali/.local/share/man
-
 package sherlock-project 0.16.2, installed using Python 3.13.9
-
 - sherlock
 
 ┌──(kali㉿kali)-[~]
-
 └─$
 ```
 
@@ -494,83 +422,44 @@ sherlock --help
 
 ```text
 ┌──(kali㉿kali)-[~]
-
 └─$ sherlock --help
-
 usage: sherlock [-h] [--version] [--verbose] [--folderoutput FOLDEROUTPUT] [--output OUTPUT]
-
 [--csv] [--xlsx] [--site SITE_NAME] [--proxy PROXY_URL] [--dump-response]
-
 [--json JSON_FILE] [--timeout TIMEOUT] [--print-all] [--print-found] [--no-color]
-
 [--browse] [--local] [--nsfw] [--txt] [--ignore-exclusions]
-
 USERNAMES [USERNAMES ...]
-
 Sherlock: Find Usernames Across Social Networks (Version 0.16.2)
-
 positional arguments:
-
 USERNAMES One or more usernames to check with social networks. Check similar
-
 usernames using {?} (replace to '_', '-', '.').
-
 options:
-
 -h, --help show this help message and exit
-
 --version Display version information and dependencies.
-
 --verbose, -v, -d, --debug
-
 Display extra debugging information and metrics.
-
 --folderoutput, -fo FOLDEROUTPUT
-
 If using multiple usernames, the output of the results will be saved to
-
 this folder.
-
 --output, -o OUTPUT If using single username, the output of the result will be saved to this
-
 file.
-
 --csv Create Comma-Separated Values (CSV) File.
-
 --xlsx Create the standard file for the modern Microsoft Excel spreadsheet
-
 (xlsx).
-
 --site SITE_NAME Limit analysis to just the listed sites. Add multiple options to specify
-
 more than one site.
-
 --proxy, -p PROXY_URL
-
 Make requests over a proxy. e.g. socks5://127.0.0.1:1080
-
 --dump-response Dump the HTTP response to stdout for targeted debugging.
-
 --json, -j JSON_FILE Load data from a JSON file or an online, valid, JSON file. Upstream PR
-
 numbers also accepted.
-
 --timeout TIMEOUT Time (in seconds) to wait for response to requests (Default: 60)
-
 --print-all Output sites where the username was not found.
-
 --print-found Output sites where the username was found (also if exported as file).
-
 --no-color Don't color terminal output
-
 --browse, -b Browse to all results on default browser.
-
 --local, -l Force the use of the local data.json file.
-
 --nsfw Include checking of NSFW sites from default list.
-
 --txt Enable creation of a txt file
-
 --ignore-exclusions Ignore upstream exclusions (may return more false positives)
 
 ┌──(kali㉿kali)-[~]
@@ -583,13 +472,9 @@ La terminal mostrará el menú de ayuda de Sherlock, incluyendo su sintaxis y la
 Entre las opciones que pueden encontrarse están:
 
 - **--help:** muestra información de ayuda.
-
 - **--version:** muestra la versión de Sherlock.
-
 - **--output:** permite especificar un archivo donde guardar los resultados.
-
 - **--site:** permite limitar la búsqueda a plataformas específicas.
-
 - **--timeout:** configura el tiempo de espera de las solicitudes.
 
 Las opciones disponibles pueden variar según la versión instalada.
@@ -604,9 +489,7 @@ sherlock --version
 
 ```text
 ┌──(kali㉿kali)-[~]
-
 └─$ sherlock --version
-
 Sherlock v0.16.2
 ```
 
@@ -639,13 +522,9 @@ ls ~/CEHPC/Actividad03
 **Resultado esperado:**
 
 > ┌──(kali㉿kali)-\[~\]
->
 > └─\$ mkdir -p ~/CEHPC/Actividad03/evidencias
->
 > ┌──(kali㉿kali)-\[~\]
->
 > └─\$ ls ~/CEHPC/Actividad03
->
 > evidencias
 
 **Paso 3.** Ingresa al directorio:
@@ -663,11 +542,10 @@ pwd
 La terminal mostrará una ruta similar a:
 
 **┌──(kali㉿kali)-\[~/CEHPC/Actividad03/evidencias\]**
-
 **└─\$ pwd**
-
+```bash
 **/home/kali/CEHPC/Actividad03/evidencias**
-
+```
 El nombre del usuario puede variar.
 
 ### 5.9. Comprobar el funcionamiento de Sherlock
@@ -700,107 +578,57 @@ Sustituye **usuario_ejemplo** por el nombre de usuario seleccionado.
 Instalación completada:** Cuando Sherlock muestre su ayuda, indique su versión y ejecute la consulta de prueba sin errores, podrás continuar con el apartado **6. Ejercicio**.
 
 ┌──(kali㉿kali)-[~]
-
 └─$ sherlock ru83n
 
 [*] Checking username ru83n on:
-
 [+] 9GAG: https://www.9gag.com/u/ru83n
-
 [+] Bluesky: https://bsky.app/profile/ru83n.bsky.social
-
 [+] CashApp: https://cash.app/$ru83n
-
 [+] Chess: https://www.chess.com/member/ru83n
-
 [+] Codecademy: https://www.codecademy.com/profiles/ru83n
-
 [+] Discord: https://discord.com
-
 [+] Dribbble: https://dribbble.com/ru83n
-
 [+] Duolingo: https://www.duolingo.com/profile/ru83n
-
 [+] F3.cool: https://f3.cool/ru83n/
-
 [+] Flickr: https://www.flickr.com/people/ru83n
-
 [+] Flipboard: https://flipboard.com/@ru83n
-
 [+] Freelancer: https://www.freelancer.com/u/ru83n
-
 [+] Freesound: https://freesound.org/people/ru83n/
-
 [+] GitHub: https://www.github.com/ru83n
-
 [+] HudsonRock: https://cavalier.hudsonrock.com/api/json/v2/osint-tools/search-by-username?username=ru83n
-
 [+] Hugging Face: https://huggingface.co/ru83n
-
 [+] IFTTT: https://www.ifttt.com/p/ru83n
-
 [+] Imgur: https://imgur.com/user/ru83n
-
 [+] Itch.io: https://ru83n.itch.io/
-
 [+] kaskus: https://www.kaskus.co.id/@ru83n
-
 [+] Kick: https://kick.com/ru83n
-
 [+] Kongregate: https://www.kongregate.com/accounts/ru83n
-
 [+] Memrise: https://www.memrise.com/user/ru83n/
-
 [+] Monkeytype: https://monkeytype.com/profile/ru83n
-
 [+] MyMiniFactory: https://www.myminifactory.com/users/ru83n
-
 [+] NitroType: https://www.nitrotype.com/racer/ru83n
-
 [+] Periscope: https://www.periscope.tv/ru83n/
-
 [+] Pokemon Showdown: https://pokemonshowdown.com/users/ru83n
-
 [+] Redbubble: https://www.redbubble.com/people/ru83n
-
 [+] Replit.com: https://replit.com/@ru83n
-
 [+] RuneScape: https://apps.runescape.com/runemetrics/app/overview/player/ru83n
-
 [+] Scratch: https://scratch.mit.edu/users/ru83n
-
 [+] SoundCloud: https://soundcloud.com/ru83n
-
 [+] Star Citizen: https://robertsspaceindustries.com/citizens/ru83n
-
 [+] Steam Community (User): https://steamcommunity.com/id/ru83n/
-
 [+] TikTok: https://www.tiktok.com/@ru83n
-
 [+] Telegram: https://t.me/ru83n
-
 [+] Tellonym.me: https://tellonym.me/ru83n
-
 [+] TradingView: https://www.tradingview.com/u/ru83n/
-
 [+] Trakt: https://www.trakt.tv/users/ru83n
-
 [+] Venmo: https://account.venmo.com/u/ru83n
-
 [+] Warrior Forum: https://www.warriorforum.com/members/ru83n.html
-
 [+] Wikipedia: https://en.wikipedia.org/wiki/Special:CentralAuth/ru83n?uselang=qqx
-
 [+] Xbox Gamertag: https://xboxgamertag.com/search/ru83n
-
 [+] YouTube: https://www.youtube.com/@ru83n
-
 [+] geocaching: https://www.geocaching.com/p/default.aspx?u=ru83n
-
 [+] osu!: https://osu.ppy.sh/users/ru83n
-
 [+] Pinterest: https://www.pinterest.com/ru83n/
-
 [+] BabyRu: https://www.baby.ru/u/ru83n
 
 [*] Search completed with 49 results
@@ -880,19 +708,18 @@ En determinadas versiones y configuraciones de Sherlock, los resultados positivo
 
 ```text
 [*] Checking username usuario_ejemplo on:
-
 [+] GitHub: https://github.com/usuario_ejemplo
-
 [+] Reddit: https://www.reddit.com/user/usuario_ejemplo
-
 [+] Pinterest: https://www.pinterest.com/usuario_ejemplo
-
 [*] Search completed
 ```
 
 Los resultados anteriores son ilustrativos.
 
 Observa que cada posible coincidencia contiene información sobre la plataforma consultada y una dirección URL asociada.
+
+<img width="1672" height="941" alt="4 Resultados de Sherlock en Kali Linux" src="https://github.com/user-attachments/assets/5223b1b8-aff7-4e71-afaa-affd4391e9c2" />
+
 
 **Paso 6. Interpretar los resultados**
 
@@ -929,23 +756,14 @@ sherlock angelortia
 Una búsqueda de este identificador ha mostrado resultados asociados a plataformas como:
 
 - 8tracks
-
 - Academia.edu
-
 - Docker Hub
-
 - Fiverr
-
 - G2G
-
 - Twitter
-
 - Virgool
-
 - WhoNix Forum
-
 - ebio.gg
-
 - Metacritic
 
 Estas coincidencias son referencias de una ejecución previa y pueden variar o dejar de aparecer.
@@ -1161,17 +979,11 @@ Comprueba que Sherlock haya realizado la consulta, terminado su ejecución y mos
 La actividad se considera completada satisfactoriamente cuando el participante logra:
 
 1.  Preparar el entorno de Kali Linux.
-
 2.  Instalar Sherlock mediante pipx.
-
 3.  Comprobar el funcionamiento de la herramienta utilizando su ayuda.
-
 4.  Ejecutar una búsqueda de un nombre de usuario autorizado.
-
 5.  Identificar e interpretar los resultados obtenidos.
-
 6.  Guardar los resultados de la ejecución en un archivo.
-
 7.  Conservar las evidencias del procedimiento realizado.
 
 #### Resultado final esperado
