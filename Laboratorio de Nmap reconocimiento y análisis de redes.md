@@ -15,28 +15,6 @@
 | Segmento de laboratorio | `192.168.56.0/24` |
 | Entorno | Red virtual de VirtualBox |
 
-## Índice
-
-1. [Introducción](#1-introducción)
-2. [Objetivos](#2-objetivos)
-3. [Entorno de laboratorio](#3-entorno-de-laboratorio)
-4. [Ejercicio 1 — Descubrimiento básico de hosts](#4-ejercicio-1--descubrimiento-básico-de-hosts)
-5. [Ejercicio 2 — Descubrimiento mediante ARP](#5-ejercicio-2--descubrimiento-mediante-arp)
-6. [Ejercicio 3 — Descubrimiento mediante ICMP Echo](#6-ejercicio-3--descubrimiento-mediante-icmp-echo)
-7. [Ejercicio 4 — Descubrimiento con TCP y UDP](#7-ejercicio-4--descubrimiento-con-tcp-y-udp)
-8. [Ejercicio 5 — Escaneo básico de puertos TCP](#8-ejercicio-5--escaneo-básico-de-puertos-tcp)
-9. [Ejercicio 6 — TCP SYN, Connect y ACK](#9-ejercicio-6--tcp-syn-connect-y-ack)
-10. [Ejercicio 7 — TCP NULL, FIN y Xmas](#10-ejercicio-7--tcp-null-fin-y-xmas)
-11. [Ejercicio 8 — Escaneo UDP](#11-ejercicio-8--escaneo-udp)
-12. [Ejercicio 9 — Especificación de puertos](#12-ejercicio-9--especificación-de-puertos)
-13. [Ejercicio 10 — Servicios y versiones](#13-ejercicio-10--servicios-y-versiones)
-14. [Ejercicio 11 — Sistema operativo](#14-ejercicio-11--sistema-operativo)
-15. [Ejercicio 12 — Temporización y rendimiento](#15-ejercicio-12--temporización-y-rendimiento)
-16. [Ejercicio 13 — Filtrado y motivos de respuesta](#16-ejercicio-13--filtrado-y-motivos-de-respuesta)
-17. [Ejercicio 14 — Almacenamiento de resultados](#17-ejercicio-14--almacenamiento-de-resultados)
-18. [Ejercicio integrador](#18-ejercicio-integrador)
-19. [Conclusiones](#19-conclusiones)
-20. [Referencias](#20-referencias)
 
 ---
 
@@ -74,6 +52,9 @@ Durante esta práctica se ejecutan técnicas de escaneo sobre una **red virtual 
 | Direcciones detectadas inicialmente | `.1`, `.100`, `.101`, `.102`, `.103` |
 
 **La IP del host de prueba puede cambiar porque puede ser asignada por DHCP.** En adelante `192.168.56.X` representa la dirección real del dispositivo autorizado. Se utiliza `192.168.56.101` solo como ejemplo; sustitúyela si cambia. El sufijo `/24` se aplica al **segmento** en los barridos y no es necesario al escanear una única IP.
+
+<img width="978" height="532" alt="Entorno de laboratorio" src="https://github.com/user-attachments/assets/08aa89c5-df7e-4648-a434-e32e6c9d786c" />
+
 
 ### 3.1 Verificar la interfaz de Kali
 
@@ -207,6 +188,9 @@ Nmap done: 1 IP address (1 host up)
 
 **Objetivo:** observar mensajes ICMP Echo Request y Echo Reply.
 
+<img width="978" height="424" alt="6 Descubrimeinto ICMP" src="https://github.com/user-attachments/assets/3f301819-7f39-405b-aacc-d0956a993600" />
+
+
 ### 6.1 Comando
 
 ```bash
@@ -339,6 +323,10 @@ Nmap done: 1 IP address (1 host up)
 ```bash
 sudo nmap -sS -p 21,22,80,443 192.168.56.101
 ```
+
+<img width="978" height="455" alt="9 ICMP Scan" src="https://github.com/user-attachments/assets/bbb963da-ba16-44b2-b598-27a292c99d12" />
+
+
 
 `-sS` envía SYN: un **SYN/ACK** permite inferir `open`, un **RST** normalmente indica `closed`; normalmente no se completa el *three-way handshake*.
 
