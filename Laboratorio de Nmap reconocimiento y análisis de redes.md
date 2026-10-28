@@ -53,7 +53,8 @@ Durante esta práctica se ejecutan técnicas de escaneo sobre una **red virtual 
 
 **La IP del host de prueba puede cambiar porque puede ser asignada por DHCP.** En adelante `192.168.56.X` representa la dirección real del dispositivo autorizado. Se utiliza `192.168.56.101` solo como ejemplo; sustitúyela si cambia. El sufijo `/24` se aplica al **segmento** en los barridos y no es necesario al escanear una única IP.
 
-<img width="978" height="532" alt="Entorno de laboratorio" src="https://github.com/user-attachments/assets/08aa89c5-df7e-4648-a434-e32e6c9d786c" />
+<img width="1672" height="941" alt="Entorno de laboratorio" src="https://github.com/user-attachments/assets/0b383869-5832-49a4-868e-5dd534b493cc" />
+
 
 
 ### 3.1 Verificar la interfaz de Kali
@@ -188,7 +189,7 @@ Nmap done: 1 IP address (1 host up)
 
 **Objetivo:** observar mensajes ICMP Echo Request y Echo Reply.
 
-<img width="978" height="424" alt="6 Descubrimeinto ICMP" src="https://github.com/user-attachments/assets/3f301819-7f39-405b-aacc-d0956a993600" />
+<img width="1774" height="887" alt="6 ICM ECO" src="https://github.com/user-attachments/assets/9b028a16-606c-451b-a6f5-3b6a7dcce8fc" />
 
 
 ### 6.1 Comando
@@ -324,7 +325,7 @@ Nmap done: 1 IP address (1 host up)
 sudo nmap -sS -p 21,22,80,443 192.168.56.101
 ```
 
-<img width="978" height="455" alt="9 ICMP Scan" src="https://github.com/user-attachments/assets/bbb963da-ba16-44b2-b598-27a292c99d12" />
+<img width="1774" height="887" alt="9 ICMP Scan a" src="https://github.com/user-attachments/assets/7fb0bbd2-b063-4336-acef-72ff0131562b" />
 
 
 
