@@ -1,6 +1,6 @@
 # Caso de estudio: evaluación de vulnerabilidades con CVSS v3.1
 
-![CVSS 3.1](https://img.shields.io/badge/CVSS-3.1-1f6feb) ![Ethical Hacking](https://img.shields.io/badge/%C3%81rea-Ethical%20Hacking-0d9488) ![Tipo](https://img.shields.io/badge/Tipo-Laboratorio%20pr%C3%A1ctico-blue)
+
 
 Actividad práctica para aplicar el **Common Vulnerability Scoring System (CVSS) versión 3.1** a escenarios documentados de vulnerabilidades. Contiene un ejemplo desarrollado y cuatro ejercicios para que el participante identifique las métricas base, calcule la puntuación y documente sus evidencias.
 
@@ -69,10 +69,13 @@ Un atacante necesita una cuenta en la base de datos MySQL de destino con el priv
 **Vector del ejemplo:** `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N`
 
 ### Captura de referencia
-![Calculadora CVSS v3.1: ejemplo con puntuación 6.4](assets/cvss-ejemplo.png)
+<img width="624" height="216" alt="cvss" src="https://github.com/user-attachments/assets/e87c8b74-7e47-4dc3-91a9-d45e1f1a1aa5" />
 
 ---
+Puedes descargar el archivo Word  en caso de que desees anotar tus repuestas aquí [Caso de estudio  Para El participante.zip](https://github.com/user-attachments/files/34108694/Caso.de.estudio.Para.El.participante.zip)
 
+
+ 
 ## Ejercicio 1. SSLv3 POODLE (CVE-2014-3566)
 
 **Puntuación base objetivo: 3.1**  
