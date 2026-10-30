@@ -4,12 +4,13 @@
 
 ### Ethical Hacking Professional Certification (CEHPC)
 
-Módulo: Análisis de Vulnerabilidades
-Nivel: Básico
-Duración estimada: 60 minutos, con el entorno previamente preparado
-Sistema operativo: Kali Linux
-Herramienta: OWASP ZAP (Zed Attack Proxy)
-Modalidad: Práctica individual, guiada o autodirigida
+| Información | Detalle |
+|---|---|
+| **Duración estimada** | 50–60 minutos |
+| **Nivel** | Básico |
+| **Herramienta** | OWASP ZAP (Zed Attack Proxy) |
+| **Herramienta principal:** | Análisis de Vulnerabilidades  |
+
 
 ## 1. Introducción
 
