@@ -155,7 +155,7 @@ Paso 2. Abre el menú de aplicaciones de Kali Linux.
 
 Paso 3. Utiliza la opción de búsqueda del menú y escribe: zap
 
-🖼️ **ZAP OWASP_img 1**
+<img width="582" height="184" alt="ZAP OWASP_img 1" src="https://github.com/user-attachments/assets/62cc1f38-8dcf-49ac-8a76-336f860b9d60" />
 
 Paso 4. Busca una aplicación identificada como OWASP ZAP, ZAP o zaproxy.
 
@@ -285,7 +285,7 @@ zaproxy
 
 Paso 4. Espera a que aparezca la pantalla inicial de OWASP ZAP.
 
-🖼️ **ZAP OWASP_img 2**
+<img width="249" height="267" alt="ZAP OWASP_img 2" src="https://github.com/user-attachments/assets/c49123c6-d24a-4dfb-9b33-38db6ecffcd5" />
 
 Resultado esperado: la herramienta inicia y muestra su interfaz gráfica.
 
@@ -351,7 +351,7 @@ También puedes iniciar ZAP desde una terminal con:
 Zaproxy
 ```
 
-🖼️ **ZAP OWASP_img 3**
+<img width="615" height="194" alt="ZAP OWASP_img 3" src="https://github.com/user-attachments/assets/39a87784-6017-4a25-856b-d6b6c8d8802f" />
 
 Paso 4. Espera mientras se cargan los módulos y complementos.
 
@@ -369,7 +369,8 @@ Loading add-ons...
 Initializing ZAP...
 ```
 
-🖼️ **ZAP OWASP_img 4**
+<img width="243" height="260" alt="ZAP OWASP_img 4" src="https://github.com/user-attachments/assets/e4b3954d-ee65-494f-8bc7-338078e9709a" />
+
 
 Estos mensajes indican que la aplicación está cargando sus componentes.
 
@@ -387,11 +388,12 @@ Procedimiento
 
 Paso 1. Identifica la ventana relacionada con Persist Session.
 
-🖼️ **ZAP OWASP_img 5**
+<img width="589" height="244" alt="ZAP OWASP_img 5" src="https://github.com/user-attachments/assets/eb830a3e-317e-46d2-9ab4-c74bff7b04e2" />
+
 
 Paso 2. Para conservar los resultados del laboratorio, selecciona la opción que permite guardar la sesión indicando un nombre y ubicación.
 
-🖼️ **ZAP OWASP_img 6**
+<img width="589" height="244" alt="ZAP OWASP_img 6" src="https://github.com/user-attachments/assets/ac3a053e-7d08-4d0d-b95f-a668d02d46d6" />
 
 Paso 3. Asigna un nombre descriptivo, por ejemplo:
 
@@ -403,7 +405,7 @@ Paso 4. Selecciona una carpeta de trabajo donde puedas localizar posteriormente 
 
 Paso 5. Confirma la configuración.
 
-🖼️ **ZAP OWASP_img 7**
+<img width="589" height="315" alt="ZAP OWASP_img 7" src="https://github.com/user-attachments/assets/dff28a8a-9f34-48b3-98fc-6b9a42424366" />
 
 Nota: Si la versión utilizada no solicita configurar una sesión al inicio, continúa con el procedimiento. La persistencia puede configurarse posteriormente desde las opciones de sesión.
 
@@ -423,7 +425,7 @@ Antes de realizar el escaneo, identifica los apartados principales de ZAP.
 | Request | Permite observar detalles de las solicitudes HTTP. |
 | Response | Permite observar las respuestas enviadas por el servidor. |
 
-🖼️ **ZAP OWASP_img 8**
+<img width="589" height="265" alt="ZAP OWASP_img 8" src="https://github.com/user-attachments/assets/ed666d29-3722-4fae-afaa-98f154e826a6" />
 
 Los elementos pueden aparecer como pestañas, paneles o apartados según la versión instalada.
 
@@ -533,7 +535,7 @@ http://192.168.56.101
 
 Paso 5. Comprueba que se muestra la aplicación web del laboratorio.
 
-🖼️ **ZAP OWASP_img 9**
+<img width="589" height="351" alt="ZAP OWASP_img 9" src="https://github.com/user-attachments/assets/631592a1-5ced-4cbe-aba2-047d8e0921e3" />
 
 Si el servidor utiliza un puerto distinto del 80, debes incluirlo en la dirección. Por ejemplo:
 
@@ -557,13 +559,13 @@ Paso 2. Localiza la pestaña Quick Start.
 
 Paso 3. Selecciona la opción Automated Scan.
 
-🖼️ **ZAP OWASP_img 10**
+<img width="589" height="276" alt="ZAP OWASP_img 10" src="https://github.com/user-attachments/assets/2be84f28-723d-4848-9460-ff8f6c4709bb" />
 
 Paso 4. Identifica el campo URL to attack.
 
 Este campo permite indicar la dirección de la aplicación que será analizada.
 
-🖼️ **ZAP OWASP_img 11**
+<img width="589" height="276" alt="ZAP OWASP_img 11" src="https://github.com/user-attachments/assets/9e06c9d0-790e-4eb0-a8b6-480b8d72b0ff" />
 
 7.2. Configurar el objetivo
 
@@ -575,7 +577,7 @@ Ejemplo:
 http://192.168.56.101
 ```
 
-🖼️ **ZAP OWASP_img 12**
+<img width="589" height="276" alt="ZAP OWASP_img 12" src="https://github.com/user-attachments/assets/91922780-f132-41d5-a724-1fef3b307494" />
 
 Paso 2. Verifica que la dirección comience con http:// o https://, según el protocolo utilizado por el servicio.
 
@@ -591,7 +593,7 @@ http://192.168.56.101/aplicacion/
 
 Paso 5. Si aparece una opción denominada Use traditional spider, mantenla habilitada para que ZAP pueda explorar los enlaces de la aplicación.
 
-🖼️ **ZAP OWASP_img 13**
+<img width="589" height="237" alt="ZAP OWASP_img 13" src="https://github.com/user-attachments/assets/b4fe8f2f-4ddc-47ce-b0b6-8928dc225ba8" />
 
 Paso 6. Si aparece Use ajax spider, utiliza la configuración indicada para el entorno. Esta opción es útil para aplicaciones que generan contenido dinámicamente con JavaScript, pero puede incrementar el tiempo de ejecución.
 
@@ -605,7 +607,8 @@ Paso 2. Localiza el botón Attack.
 
 Paso 3. Haz clic en Attack.
 
-🖼️ **ZAP OWASP_img 14**
+<img width="589" height="237" alt="ZAP OWASP_img 14" src="https://github.com/user-attachments/assets/ec1ba26e-e8db-4791-918f-23f90087bf10" />
+
 
 Paso 4. Observa el indicador de progreso.
 
@@ -628,13 +631,14 @@ Paso 5. Espera a que finalicen las tareas de exploración y escaneo activo.
 Puedes observar el avance en las pestañas relacionadas con Spider y Active Scan.
 
 
-🖼️ **ZAP OWASP_img 15**
+<img width="589" height="336" alt="ZAP OWASP_img 15" src="https://github.com/user-attachments/assets/68e10854-b5fd-4650-a3c0-0f70c1eca139" />
 
 Paso 6. No cierres ZAP mientras el análisis siga ejecutándose.
 
 ⚠️Se paciente, el análisis tomara varios minutos, puedes verificar la barra de avance
 
-🖼️ **ZAP OWASP_img 16**
+<img width="589" height="80" alt="ZAP OWASP_img 16" src="https://github.com/user-attachments/assets/8e101c67-9097-4da5-8e61-3912c03aca88" />
+
 
 🚩 Si necesitas detenerlo porque introdujiste un objetivo incorrecto, utiliza el botón Stop o la opción correspondiente a detener el escaneo.
 
@@ -679,7 +683,7 @@ POST
 
 Se utiliza para enviar datos al servidor, por ejemplo, mediante formularios.
 
-🖼️ **ZAP OWASP_img 17**
+<img width="589" height="119" alt="ZAP OWASP_img 17" src="https://github.com/user-attachments/assets/e2cf4e5d-5251-48ec-a794-eaaf8f2639db" />
 
 También es posible encontrar otros métodos HTTP según las características de la aplicación.
 
@@ -702,13 +706,14 @@ Paso 1. Selecciona una de las entradas mostradas en History.
 
 Paso 2. Localiza el apartado Request.
 
-🖼️ **ZAP OWASP_img 18**
+<img width="589" height="263" alt="ZAP OWASP_img 18" src="https://github.com/user-attachments/assets/c17aeefc-3b62-4113-9f15-6b53e28f824c" />
+
 
 Paso 3. Observa la información de la solicitud HTTP.
 
 Ejemplo ilustrativo:
 
-🖼️ **ZAP OWASP_img 19**
+<img width="589" height="211" alt="ZAP OWASP_img 19" src="https://github.com/user-attachments/assets/1a3449ab-797f-42a0-bdf7-2de50494e3c7" />
 
 Paso 4. Selecciona el apartado Response.
 
@@ -743,13 +748,13 @@ Paso 2. Selecciónala.
 
 Paso 3. Observa las alertas disponibles.
 
-🖼️ **ZAP OWASP_img 20**
+<img width="589" height="64" alt="ZAP OWASP_img 20" src="https://github.com/user-attachments/assets/bf2dba41-6a1c-4d70-9c59-afece6cf0466" />
 
 Paso 4. Si las alertas están organizadas por categorías, expande la clasificación correspondiente para observar sus detalles.
 
 Paso 5. Selecciona una de las alertas para mostrar su información.
 
-🖼️ **ZAP OWASP_img 21**
+<img width="589" height="175" alt="ZAP OWASP_img 21" src="https://github.com/user-attachments/assets/7a6c5671-8e9f-4753-8fe7-d871159859c5" />
 
 ### 9.2. Identificar el nivel de riesgo
 
@@ -792,7 +797,7 @@ Esta sección contiene recomendaciones generales de mitigación.
 
 Paso 9. Si aparece una referencia CWE, CVE u otra clasificación, registra su identificador para facilitar la consulta técnica posterior.
 
-🖼️ **ZAP OWASP_img 22**
+<img width="589" height="327" alt="ZAP OWASP_img 22" src="https://github.com/user-attachments/assets/f645d4c9-4be5-4245-aeb5-f18a3ab59e32" />
 
 ### 9.4. Ejemplo de interpretación
 
@@ -842,7 +847,7 @@ Paso 2. Identifica las rutas que pertenecen a la aplicación objetivo.
 
 Ejemplos ilustrativos:
 
-🖼️ **ZAP OWASP_img 23**
+<img width="589" height="142" alt="ZAP OWASP_img 23" src="https://github.com/user-attachments/assets/e56e0044-a516-472c-83d4-a6475e10529c" />
 
 Paso 3. Comprueba que las rutas corresponden al objetivo autorizado.
 
@@ -866,7 +871,7 @@ Resultado esperado: visualizar los recursos que ZAP pudo descubrir mediante las 
 
 Importante: Spider no garantiza descubrir todos los recursos de la aplicación. Algunos pueden requerir autenticación, interacción con formularios o mecanismos dinámicos de navegación.
 
-🖼️ **ZAP OWASP_img 24**
+<img width="589" height="282" alt="ZAP OWASP_img 24" src="https://github.com/user-attachments/assets/1c94c809-49ec-47e1-9c7c-44b9739771fc" />
 
 ### 11. Guardar los resultados y evidencias
 
